@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+</head>
+<body>
+    <h3>4. Faça um programa que calcule a média final de um(a) aluno(a) considerando que ele(a) deve informar 3 notas. 
+        A primeira nota equivale a 30% e as duas últimas equivalem a 35% cada uma.Se a média final for igual ou superior a 70, 
+        parabenize-o. Se a média final for maior ou igual a 50 e menor que 70, mostre uma mensagem dizendo que ele está em exame.
+        Se nenhuma das condições anteriores forem atendidas, mostre uma mensagem dizendo que ele reprovou na matéria.
+        Não esqueça de pedir o nome do aluno para nomeá-lo</h3>
+
+    <script type="text/javascript">
+            var n1=window.prompt("Digite sua N1: ")
+            if(n1>100)
+                alert("nota invalida")
+            else
+            var n2=window.prompt("Digite sua N2: ")
+            if(n2>100)
+                alert("nota invalida")
+            else
+            var n3=window.prompt("Digite sua N3: ")
+            if(n3>100)
+                alert("nota invalida")
+            else
+            n1*=0.30;
+            n2*=0.35;
+            n3*=0.35;
+
+            var media=n1+n2+n3;
+
+            document.write("media="+media+"<br>");
+            document.write("nota 1"+n1+"<br>");
+            document.write("nota 2"+n2+"<br>");
+            document.write("nota 3"+n3+"<br>");
+
+            if(media>=70)
+                alert("tu passo ladrao");
+            else if(media>=50 && media<70)
+                alert("tu ta em exame po");
+            else
+                alert("tu rodou doidao");
+
+        </script>  
+</body>
+</html>

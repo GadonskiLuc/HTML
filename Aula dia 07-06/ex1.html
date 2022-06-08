@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <h3>1. Faça um programa que leia 10 números e diga se ele é par ou impar</h3>
+
+    <script type="text/javascript">
+        for(i=0;i<10;i++){
+        var numero=window.prompt("Insira o "+(i+1)+"º numero:");
+        if(numero==0)
+            document.write(+numero+": neutro<br>")
+        else if(numero%2==0)
+            document.write(+numero+": par<br>");
+        else
+            document.write(+numero+": impar<br>");   
+        }
+    </script>  
+</body>
+</html>

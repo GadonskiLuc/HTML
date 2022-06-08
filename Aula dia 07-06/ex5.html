@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex5</title>
+</head>
+<body>
+    <h3>Faça um programa que peça a nota e o nome de 5 alunos e mostre no final quem tem 
+        a maior nota entre eles e qual é a maior nota. Use uma variável para guardar a maior nota 
+        e o nome do aluno que obteve a maior nota</h3>
+    <script type="text/javascript">
+        var maior_nota=0;
+        var maior_aluno="";
+        for(i=0;i<5;i++){
+            var aluno=window.prompt("Digite nome do aluno: ");
+            var nota=eval(window.prompt("Digite a nota de "+aluno));
+            document.write(aluno+": "+nota+"<br>");
+            if(nota>maior_nota){
+                maior_nota=nota;
+                maior_aluno=aluno;
+            }else{
+                maior_nota=maior_nota;
+            }
+            document.write("maior nota: "+maior_nota+"<br>");
+        }
+        alert("a maior nota é de "+maior_aluno+": "+maior_nota);
+    </script>
+</body>
+</html>
