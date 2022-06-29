@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 7</title>
+</head>
+<body>
+    <h3>
+    7. A prefeitura de uma cidade deseja fazer uma pesquisa entre seus habitantes. Faça um
+    algoritmo para coletar dados sobre o salário e número de filhos de cada habitante e após as
+    leituras, escrever:
+    a) Média de salário da população
+    b) Média do número de filhos
+    c) Maior salário dos habitantes
+    d) Percentual de pessoas com salário menor que R$ 150,00
+    Obs.: Ao final de cada laço pergunte se deseja continuar, se a resposta for S, continua, senão
+    sai do laço.
+    </h3>
+    <script>
+        var media_sal, soma_sal=0, media_filhos, soma_filhos=0, maior_sal=0;
+        var cont = 0;
+        var cont2 = 0;
+        do{
+            var salario = eval(prompt("Digite seu salário:"));
+            if(salario >= maior_sal){maior_sal=salario;}
+            if(salario < 150){cont2++};
+            var filhos = eval(prompt("Digite quantos filhos você tem:"));
+            soma_sal+=salario;
+            soma_filhos+=filhos;
+            cont++
+            var resposta = prompt("Desejas continuar?(S/N)");
+            if(resposta != 'S' && resposta != 'N'){window.alert("Erro")};
+        }while(resposta == 'S');
+        media_sal = soma_sal/cont;
+        media_filhos = soma_filhos/cont;
+        document.write(`Média salarial da população: ${media_sal} Reais<br>`);
+        document.write(`Média de filhos por habitante: ${media_filhos} filhos<br>`);
+        document.write(`Maior salário da população: ${maior_sal} Reais<br>`);
+        document.write(`Porcentual de habitantes com um salario menor que R$ 150,00: ${(cont2/cont)*100}%`);
+    </script>
+</body>
+</html>

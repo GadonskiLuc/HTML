@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 3</title>
+</head>
+<body>
+    <h3>3. Escreva um algoritmo para ler o número total de eleitores de um município, o número de
+        votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em
+        relação ao total de eleitores.</h3>
+    <script>
+        var eleitores = eval(prompt("Digite o número de eleitores: "));
+        var brancos = eval(prompt("Digite o número de votos brancos: "));
+        var nulos = eval(prompt("Digite o número de votos nulos: "));
+        var validos = eval(prompt("Digite o número de votos validos: "));
+
+        document.write(`Total de eleitores = ${eleitores}`);
+        document.write(`Porcentual de votos brancos(${brancos}) = ${(brancos*100)/eleitores}%<br>`);
+        document.write(`Porcentual de votos nulos(${nulos}) = ${(nulos*100)/eleitores}%<br>`);
+        document.write(`Porcentual de votos validos(${validos}) = ${(validos*100)/eleitores}%<br>`);
+    </script>
+</body>
+</html>

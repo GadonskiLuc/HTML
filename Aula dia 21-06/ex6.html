@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 6</title>
+</head>
+<body>
+    <h3>
+        6. Faça um programa que leia 100 valores e no final, escreva o maior e o menor valor lido.
+    </h3>
+    <script>
+        var maior = 0;
+        var menor = 0;
+        var valor;
+        for(i=0;i<100;i++){
+            var valor = eval(prompt("Digite um valor"));
+            if(i==0){maior=valor; menor=valor;}
+            if(valor >= maior){maior=valor;}
+            else if(valor <= menor){menor=valor;}
+        }
+        document.write(`<br>Maior numero: ${maior}<br>`);
+        document.write(`Menor numero: ${menor}<br>`);
+    </script>
+</body>
+</html>
