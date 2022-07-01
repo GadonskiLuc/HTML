@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>exercicio 8</title>
+</head>
+<body>
+    <script>
+        function darkmode(){
+            document.body.classList.toggle('dark');
+        }
+    </script>
+
+    <div class="Form">
+        <fieldset class="Formulario">
+            <legend>Dados de Pagamento</legend>
+        <form action="mailto:lucasmotta-2011@hotmail.com" method="post" name="dados_pagamento">
+            <div class="Info">
+                <label>Nome:</label>
+                <br>
+                <input type="text" name="nome" size="30" >
+                <br>
+            </div>
+
+            <div class="Info">
+            <label>CPF:</label>
+            <br>
+            <input type="text" name="cpf" placeholder="ex: 123.456.789-10" size="30">
+            <br>
+            </div>
+        
+            <div class="Info">
+            <label>Endereço:</label>
+            <br>
+            <input type="text" name="endereço" size="30">
+            <br>
+            </div>
+
+            <div class="Info">
+                <label>Forma de Pagamento: </label>
+                <br>
+                <select name="dados" size="1">
+                    <option>MasterCard</option>
+                    <option>Visa</option>
+                    <option>Santander</option>
+                    <option>Caixa</option>
+                    <option>Bradesco</option>
+                    </select>
+            </div>
+            <div class="Info">
+                <label>Tipo de Cartão</label>
+                <br>
+                <input type="radio" name="cartao" value="credito">Crédito<br>
+                <input type="radio" name="cartao" value="debito">Débito<br>
+            </div>
+
+            <div class="Info">
+                <label>Nome do Titular</label>
+                <br>
+                <input type="text" name="titular" size="30">
+                <br>
+            </div>
+
+            <div class="Info">
+                <label>Número do Cartão</label>
+                <br>
+                <input type="text" name="numero" size="30" placeholder="xxxx-xxxx-xxxx-xxxx">
+                <br>
+            </div>
+
+            <div class="Info">
+                <input type="text" name="cvc" placeholder="CVC" size="3">
+                <input type="text" name="validade" placeholder="MM/AA" size="5">
+            </div>
+        
+            <div class="Info">
+                <label>Parcelas:</label>
+                <input type="checkbox" name="parcela" value="vista">À Vista
+                <input type="checkbox" name="parcela" value="2x">2x
+                <input type="checkbox" name="parcela" value="3x">3x
+                <input type="checkbox" name="parcela" value="4x">4x
+                <input type="checkbox" name="parcela" value="5x">5x
+                <input type="checkbox" name="parcela" value="6x">6x
+            </div>
+
+            <div class="Info">
+                <br>
+                <input type="submit" name="enviar" value="Enviar">
+                <input type="reset" name="limpar" value="Limpar">
+                <input type="button" name="tema" value="Darkmode" onclick="darkmode()">
+            </div>
+        </form>
+    </div>
+    </fieldset>
+</body>
+</html>
